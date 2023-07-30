@@ -1,11 +1,12 @@
 import React from "react";
+import MovieNavbarComponent from "../components/navbar/movieNavbarComponent";
 
 const MovieLayoutHOC = (componet) => ({ ...props }) => {
     return (
         <div>
-            <div>
-                <componet {...props}/>
-            </div>
+            <MovieNavbarComponent/>
+            <componet {...props}/>
+            <div>Footer</div>
         </div>
     )
 };
