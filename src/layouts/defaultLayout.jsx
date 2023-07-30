@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../components/navbar/navbarComponent";
 
-const DefaultLayoutHOC = (componet) => ({ ...props }) => {
+const DefaultLayoutHOC = (Componet) => ({ ...props }) => {
     return (
         <div>
             <Navbar/>
-            <componet {...props}/>
+            <Componet {...props}/>
             <div>Footer</div>
         </div>
-    )
+    );
 };
 
 export default DefaultLayoutHOC;

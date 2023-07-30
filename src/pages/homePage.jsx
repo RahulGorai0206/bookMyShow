@@ -1,9 +1,8 @@
 import React from "react";
+import DefaultLayoutHOC from "../layouts/defaultLayout";
 
 function HomePage() {
-    return (
-        <>HomePage</>
-    )
+    return <div>Hiii</div>
 };
 
-export default HomePage;
+export default DefaultLayoutHOC(HomePage);

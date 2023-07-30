@@ -1,4 +1,5 @@
 import React from "react";
+import MovieLayoutHOC from "../layouts/movieLayout";
 
 function MoviePage() {
     return (
@@ -6,4 +7,4 @@ function MoviePage() {
     )
 };
 
-export default MoviePage;
+export default MovieLayoutHOC(MoviePage);
