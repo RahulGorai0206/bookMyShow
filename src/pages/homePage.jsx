@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 // Layout HOC's
 import DefaultLayoutHOC from "../layouts/defaultLayout";
@@ -9,6 +9,10 @@ import heroCarousalComponent from "../components/horeCarousal/heroCarousalCompon
 import PosterSlider from "../components/posterSlider/posterSlider";
 
 function HomePage() {
+    const [recomendedMovies, useRecomendedMovies] =useState([]);
+    const [premireMovies, setPremireMovies] =useState([]);
+    const [onlineStreamEvents,setOnlineStreamEvents] = useState([]);
+
     return <div>Hiii</div>
 };
 
